@@ -579,10 +579,6 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 }
 
 
-// File contracts/PepeToken.sol
-
-
-
 pragma solidity ^0.8.0;
 
 
