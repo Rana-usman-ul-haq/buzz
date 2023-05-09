@@ -582,14 +582,14 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 pragma solidity ^0.8.0;
 
 
-contract BuzzLightyear is Ownable, ERC20 {
+contract BUZZ is Ownable, ERC20 {
     bool public limited;
     uint256 public maxHoldingAmount;
     uint256 public minHoldingAmount;
     address public uniswapV2Pair;
     mapping(address => bool) public blacklists;
 
-    constructor() ERC20("Buzz Lightyear", "$BUZZ") {
+    constructor() ERC20("BUZZ", "$BUZZ") {
         _mint(msg.sender, 420690000000000 * 10 ** decimals());
     }
 
